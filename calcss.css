@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:url("tayyab-ejaz-hWYx2Ttw_2o-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.container{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+.container .cal{
+    position: relative;
+    display: grid;
+}
+.container .cal .value{
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    text-align: right;
+    border: none;
+    outline: none;
+    font-size: 30px ;
+    background: transparent;
+    color:#fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0..05);
+}
+
+.container .cal span{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0..05);
+
+}
+.container .cal span:hover{
+    transition: 0s;
+    background: rgba(255, 255, 255, 0.05);
+
+}
+.container .cal span:active{
+    background: rgba(20, 20, 20, 0.74);
+    font-size: 25px;
+    font-weight: 500;
+
+}
+.container .cal .clear{
+    grid-column: span 2;
+    width: 150px;
+}
+.container .cal .pluse{
+    grid-row: span 2;
+    height: 150px;
+}
